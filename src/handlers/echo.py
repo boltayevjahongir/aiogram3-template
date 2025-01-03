@@ -8,4 +8,5 @@ async def echo_handler(message: Message):
     """
     Foydalanuvchining barcha xabarlariga javob qaytaruvchi handler.
     """
-    await message.reply(f"Siz yuborgan xabar: {message.text}")
+    answer_text = f"📝 Қолданба:\n\nБотты қолдану үшін төмендегі 🔠 кнопкадардан пайдаланыңыз немесе...\n\n👉 /start - МӘЗІР\n👉 /taxi - 🚕 Такси шақыру\n👉 /partner - 🚖 Такси болу"
+    await message.answer(answer_text)
